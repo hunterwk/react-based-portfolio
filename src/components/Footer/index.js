@@ -1,7 +1,8 @@
 import React from "react";
+import "./styles.css";
 
 function Footer () {
-    return <h1>Footer</h1>
+    return <h6>I made this portfolio using React and bootstrap elements! Thanks for visiting!</h6>
 }
 
 export default Footer;
