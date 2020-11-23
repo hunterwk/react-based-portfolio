@@ -6,7 +6,7 @@ import AboutMe from "./pages/aboutme";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Link to path="/">
             <Main />
-          </Route>
+          </Link>
           <Route path="/contact">
             <Contact />
           </Route>
