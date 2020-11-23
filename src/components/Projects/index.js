@@ -1,7 +1,12 @@
 import React from "react";
+import Burger from "./burger";
 
 function Projects () {
-    return <h3>Projects</h3>
+    return (
+    <div className="container">
+    <h3>Projects</h3>
+        <Burger />
+    </div>)
 }
 
 export default Projects;
