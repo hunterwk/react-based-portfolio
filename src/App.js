@@ -6,17 +6,20 @@ import AboutMe from "./pages/aboutme";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
     <div className="container mx-auto">
       <Header />
+
       <Router>
+        <NavBar/>
         <Switch>
-          <Link to path="/">
+          <Route exact path="/">
             <Main />
-          </Link>
+          </Route>
           <Route path="/contact">
             <Contact />
           </Route>
@@ -24,6 +27,7 @@ function App() {
             <AboutMe />
           </Route>
         </Switch>
+        
       </Router>
       <Footer />
     </div>
