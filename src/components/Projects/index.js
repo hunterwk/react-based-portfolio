@@ -1,12 +1,15 @@
 import React from "react";
 import Burger from "./burger";
 
-function Projects () {
-    return (
+function Projects() {
+  return (
     <div className="container">
-    <h3>Projects</h3>
+      <h3>Projects</h3>
+      <div className="row">
         <Burger />
-    </div>)
+      </div>
+    </div>
+  );
 }
 
 export default Projects;
